@@ -18,272 +18,298 @@
     background: #555; 
   }
 
-
+@font-face {
+    font-family: myFont;
+    src: url(sansation_light.woff);
+ }
 
 
 
   body {
-    background-color: #f5f3f3;
+    background-color: #17202F;
     }
 
 
 
 
-.navbar{
-    height: 35px; 
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-.navbarprojects{
-    background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
-    box-shadow: 0px 1px 2px 0px #888888; 
-}
-
-.bg{
-    background-image: url("images/homebg.png");
-}
-
-.homeBg{
-    width: 100%;
-    margin-top: -50px;
-}
-.nav-link{
-    color: black;
-}
-.nav-link:hover{
-    background: #153668;
-    color: white !important;
-    transition: 0.2s;
-    height: fit-content;
-    font-size: 17px;
-    border-radius: 5px;
-}
+    
 
 
-
-
-/***FOR 18 Inches***/
-@media screen and (max-width: 1800px) {
-
-
-
-
-
-
-
-
-    .hello1{
-        font-size: 28px;
-    }
-    .hello, .hello2, .hello3{
-        font-size: 20px;
-    }
-
-    .hello3 a, .hello2 a{
-        text-decoration: none;
-        color: #153668;
-    }
-
-    .homeBgText{
+/* Large screens ----------- */
+@media only screen and (min-device-width : 1823px) and (max-device-width : 2223px) {
+    .navbar{
+        height: 35px; 
         width: fit-content;
-        color: #153668;
-        width: 50%;
-        display: block;
-        margin-top: -45%;
-        margin-left: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        border-radius: 5px;
     }
-    .textMyServices{
-        width: fit-content;
-        color: #153668;
-        width: 50%;
-        display: block;
-        margin-top: 200px;
-        margin-left: 40%;
+    .nav-item{
+        color:#CFCFCF;
+        margin-left: 5px;
+    }
+    .nav-link:hover{
+        color:#7CABC7;
     }
 
-    .textBox{
-        width: 50%; 
+    .bg{
+        background-image: url("images/homebg.png");
     }
 
-    .aboutMeHeader{
-        margin-left: 100px;
-        font-size: 28px;
-        color: #153668;
-    }
-
-    .aboutMeText{
-        font-size: 20px;
-        color: #ffffff;
-        background:#153668;
-        float: left;
-        display: inline-block;
-        width: 55%;
-        padding: 20px 20px 20px 100px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .profile{
-        float: right;
-        display: inline-block;
-        width:20%;
-        margin-right: 200px;
+    .homeBg{
+        width: 100%;
         margin-top: -50px;
     }
-
-
-    .aboutMe2{
-        margin-top: -43%;
+    .nav-link{
+        color: #ffffff;
     }
-    .aboutMeContact{
-        text-align: center;
-        margin-top: 525px;
-        font-size: 30px;
-    }
-    .aboutMeContact a{
-        text-decoration: none;
-        color: #153668;
+
+    .active{
+        color: #C8A487;
     }
 
 
+    .slides-hidden { display : none; }
 
 
-    .column {
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        box-shadow: 0px 1px 2px 0px #888888; 
-        padding-bottom: 10px;
-        background-color: white;
-    }
-    .column:hover {
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        box-shadow: 2px 3px 2px 0px #888888; 
-    }
-    .column h5{
-        background: #ffffff;
-        padding:5px 0px;
-    }
-    
-    .row{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        text-align: center;
-        height: fit-content;
 
-    }
 
-    .projectsThumbNails{
+
+
+
+
+
+    /**HOME**/
+    .homeCont{
         width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        height: 750px;
+        background-color: #323B4C;
+        margin-top: -40px;
+        padding-top: 20px;   
     }
 
-    .logocontainer{
-        width: 80%;
-        text-align: center;
-        margin-top: 20px;
+        .homePic{
+            width:250px;
+        }
+        .homePicCont{
         margin-left: auto;
         margin-right: auto;
-    }
-    .logocontainer img{
-        width: 350px;
-        border-radius: 10px;
-        margin-top: -150px
-        }
-
-        .containerimg{
-            display: inline-block;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-
-        .logocontainer1{
-            width: 80%;
-            text-align: center;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .logocontainer1 img{
-            width: 350px;
-            border-radius: 10px;
-            margin-top: 0px
-        }
-    
-        .containerimg1{
-            display: inline-block;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-
-
-
-        .projecttext{
-            display: inline-block;
-            margin-left: 10px;
-            width: 60%;
-            text-align: left;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px 1px #888888; 
-            background-color: white;
-        }
-
-        .backbutton{
-            background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
-            box-shadow: 0px 1px 2px 0px #888888; 
-            border: none;
-            height: 35px;
-            border-radius: 5px;
+        width: min-content;
             
         }
-        .divBtn{
-            width: 80%;
-            margin-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            padding:0px 20px;
-        }
-
-        .projectScreenshots{
-            
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+        .homeMainCont{
             align-items: center;
             text-align: center;
-            margin-top: 20px;
-            
+            padding:10px;
+            margin-top: 200px;
         }
-        .projectScreenshots h4{
-            background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
-            padding-bottom: 5px;
+
+        .homeText{
+            color: #CFCFCF;
+            max-width: 40%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:80px;
+            display: inline-block;
+        }
+        .clsuLink{
+            color: #CFCFCF; 
+        }
+        .clsuLink:hover{
+            color: #C8A487;
+            text-decoration: none;
+        }
+
+        .socMed{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            color: #CABAAD;
+        }
+        .icons{
+            font-size: 30px;
+            margin: 0px 5px 0px 5px;
+        }
+        .icon1{
+            color: #4267B2;
+        }
+        .icon2{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon3{
+            color: #0077b5;
+        }
+        .icon4{
+            color: #229ED9;
         }
 
     
-        .projectPicsImg{
+
+        .textBox{
+            width: 50%; 
+        }
+
+        .aboutMeHeader{
+            font-size: 28px;
+            color: #BA7041;
+            text-align: center;
+        }
+
+        .aboutMeText{
+            font-size: 20px;
+            color: #cfcfcf;
+            
             width: 700px;
-            border-radius: 10px;
-            box-shadow: 0px 1px 2px 0px #888888; 
-            margin-bottom: 10px;
+            padding: 0px 20px 20px 20px;
+            text-align: left;
+            text-align: right;
         }
-        .projectPicsImg1{
+        .aboutMePicCont{
+            
+    
+        }
+        .aboutMePic{
             width: 300px;
+            margin-top: -200px;
+            margin-left: 50px;
+        }
+        .cont{
+            align-items: center;
+            
+            text-align: center;
+            margin-top: 70px;
+        }
+        .aboutMeCont{
+            width: 100%;
+            height: 500px;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;   
+        }
+        .aboutMeSocMed{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            color: #CABAAD;
+        
+        }
+    
+        .email{
+            text-decoration: none;
+            color: #cfcfcf;
+        }
+
+        .column {
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
             border-radius: 10px;
             box-shadow: 0px 1px 2px 0px #888888; 
-            margin-bottom: 10px;
+            padding-bottom: 10px;
+            background-color: #CFCFCF;
         }
+        .column:hover {
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 2px 3px 2px 0px #292929; 
+        }
+        .column h5{
+            background: #CFCFCF;
+            padding:5px 0px;
+        }
+        
+        
+        .row{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: center;
+            height: fit-content;
+            
+        }
+
+        .myProjectsCont{
+            width: 100%;
+            height: 750px;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;
+        }
+        .header{
+            text-align: center;
+            color: #CFCFCF;
+            margin-top: 70px;
+        }
+
+        .projectsThumbNails{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .logocontainer{
+            width: 70%;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logocontainer img{
+            width: 350px;
+            border-radius: 10px;
+            
+            }
+
+            .containerimg{
+                margin-top: 20px;
+                margin-bottom: auto;
+            }
+
+
+            .logocontainer1{
+                width: 80%;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .logocontainer1 img{
+                width: 350px;
+                border-radius: 10px;
+                margin-top: 0px
+            }
+        
+            .containerimg1{
+                
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+
+
+
+            .projecttext{
+                width: 80%px;
+                text-align: left;
+                padding: 20px;
+                background-color: #323B4C;
+                color: #cfcfcf;
+                margin-top: 10px;
+            }
+            .projecttext h5{
+                color: #C8A487;
+            }
+            
+
+
 }
 
 
@@ -299,247 +325,944 @@
 
 
 
+/* Desktops and laptops ----------- */
+@media only screen and (min-device-width : 1224px) and (max-device-width : 1823px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***FOR 13 Inches***/
-@media screen and (max-width: 1300px) {
-
-
-
-
-
-
-
-
-    .hello1{
-        font-size: 28px;
-    }
-    .hello, .hello2, .hello3{
-        font-size: 20px;
-    }
-
-    .hello3 a, .hello2 a{
-        text-decoration: none;
-        color: #153668;
-    }
-
-    .homeBgText{
+    .navbar{
+        height: 35px; 
         width: fit-content;
-        color: #153668;
-        width: 50%;
-        display: block;
-        margin-top: -50%;
-        margin-left: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        border-radius: 5px;
     }
-    .textMyServices{
-        width: fit-content;
-        color: #153668;
-        width: 50%;
-        display: block;
-        margin-top: 200px;
-        margin-left: 40%;
+    .nav-item{
+        color:#CFCFCF;
+        margin-left: 5px;
+    }
+    .nav-link:hover{
+        color:#7CABC7;
     }
 
-    .textBox{
-        width: 50%; 
+    .bg{
+        background-image: url("images/homebg.png");
     }
 
-    .aboutMeHeader{
-        margin-left: 100px;
-        font-size: 28px;
-        color: #153668;
-    }
-
-    .aboutMeText{
-        font-size: 20px;
-        color: #ffffff;
-        background:#153668;
-        float: left;
-        display: inline-block;
-        width: 55%;
-        padding: 20px 20px 20px 100px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .profile{
-        float: right;
-        display: inline-block;
-        width:20%;
-        margin-right: 200px;
+    .homeBg{
+        width: 100%;
         margin-top: -50px;
     }
-
-
-    .aboutMe2{
-        margin-top: -43%;
+    .nav-link{
+        color: #ffffff;
     }
-    .aboutMeContact{
-        text-align: center;
-        margin-top: 325px;
-        font-size: 30px;
-    }
-    .aboutMeContact a{
-        text-decoration: none;
-        color: #153668;
+
+    .active{
+        color: #C8A487;
     }
 
 
+    .slides-hidden { display : none; }
 
 
-    .column {
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        box-shadow: 0px 1px 2px 0px #888888; 
-        padding-bottom: 10px;
-        background-color: white;
-    }
-    .column:hover {
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        box-shadow: 2px 3px 2px 0px #888888; 
-    }
-    .column h5{
-        background: #ffffff;
-        padding:5px 0px;
-    }
-    
-    .row{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        text-align: center;
-        height: fit-content;
 
-    }
 
-    .projectsThumbNails{
+
+
+
+
+
+    /**HOME**/
+    .homeCont{
         width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        height: 450px;
+        background-color: #323B4C;
+        margin-top: -40px;
+        padding-top: 20px;   
     }
 
-    .logocontainer{
-        width: 80%;
-        text-align: center;
-        margin-top: 20px;
+        .homePic{
+            width:200px;
+        }
+        .homePicCont{
         margin-left: auto;
         margin-right: auto;
-    }
-    .logocontainer img{
-        width: 350px;
-        border-radius: 10px;
-        margin-top: -200px
-        }
-
-        .containerimg{
-            display: inline-block;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-
-        .logocontainer1{
-            width: 80%;
-            text-align: center;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .logocontainer1 img{
-            width: 350px;
-            border-radius: 10px;
-            margin-top: 0px
-        }
-    
-        .containerimg1{
-            display: inline-block;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-
-
-
-        .projecttext{
-            display: inline-block;
-            margin-left: 10px;
-            width: 60%;
-            text-align: left;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px 1px #888888; 
-            background-color: white;
-        }
-
-        .backbutton{
-            background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
-            box-shadow: 0px 1px 2px 0px #888888; 
-            border: none;
-            height: 35px;
-            border-radius: 5px;
+        width: min-content;
             
         }
-        .divBtn{
-            width: 80%;
-            margin-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            padding:0px 20px;
-        }
-
-        .projectScreenshots{
-            
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+        .homeMainCont{
             align-items: center;
             text-align: center;
-            margin-top: 20px;
-            
+            padding:10px;
+            margin-top: 70px;
         }
-        .projectScreenshots h4{
-            background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
-            padding-bottom: 5px;
+
+        .homeText{
+            color: #CFCFCF;
+            max-width: 40%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:20px;
+            display: inline-block;
+        }
+        .clsuLink{
+            color: #CFCFCF; 
+        }
+        .clsuLink:hover{
+            color: #C8A487;
+            text-decoration: none;
+        }
+
+        .socMed{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            color: #CABAAD;
+        }
+        .icons{
+            font-size: 30px;
+            margin: 0px 5px 0px 5px;
+        }
+        .icon1{
+            color: #4267B2;
+        }
+        .icon2{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon3{
+            color: #0077b5;
+        }
+        .icon4{
+            color: #229ED9;
         }
 
     
-        .projectPicsImg{
+
+        .textBox{
+            width: 50%; 
+        }
+
+        .aboutMeHeader{
+            font-size: 28px;
+            color: #BA7041;
+            text-align: center;
+        }
+
+        .aboutMeText{
+            font-size: 20px;
+            color: #cfcfcf;
+            display: inline-block;
             width: 700px;
+            padding: 0px 20px 20px 20px;
+            text-align: left;
+            
+        }
+        .aboutMePicCont{
+            display: inline;
+        
+            
+        }
+        .aboutMePic{
+            width: 300px;
+            margin-top: -200px;
+            margin-left: 50px;
+        }
+        .cont{
+            align-items: center;
+            
+            text-align: center;
+            margin-top: 70px;
+        }
+        .aboutMeCont{
+            width: 100%;
+            height: 500px;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;   
+        }
+        .aboutMeSocMed{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            color: #CABAAD;
+        
+        }
+    
+        .email{
+            text-decoration: none;
+            color: #cfcfcf;
+        }
+
+        .column {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
             border-radius: 10px;
             box-shadow: 0px 1px 2px 0px #888888; 
-            margin-bottom: 10px;
+            padding-bottom: 10px;
+            background-color: #CFCFCF;
         }
-        .projectPicsImg1{
+        .column:hover {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 2px 3px 2px 0px #888888; 
+        }
+        .column h5{
+            background: #CFCFCF;
+            padding:5px 0px;
+        }
+        
+        
+        .row{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: center;
+            height: fit-content;
+            
+        }
+
+        .myProjectsCont{
+            width: 100%;
+            height: 625px;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;
+        }
+        .header{
+            text-align: center;
+            color: #CFCFCF;
+            margin-top: 70px;
+        }
+
+        .projectsThumbNails{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .logocontainer{
+            width: 80%;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logocontainer img{
+            width: 350px;
+            border-radius: 10px;
+            margin-top: -200px
+            }
+
+            .containerimg{
+                display: inline-block;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+
+            .logocontainer1{
+                width: 80%;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .logocontainer1 img{
+                width: 350px;
+                border-radius: 10px;
+                margin-top: 0px
+            }
+        
+            .containerimg1{
+                display: inline-block;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+
+
+
+            .projecttext{
+                display: inline-block;
+                margin-left: 10px;
+                width: 60%;
+                text-align: left;
+                padding: 20px;
+                background-color: #323B4C;
+                color: #cfcfcf;
+            }
+            .projecttext h5{
+                color: #C8A487;
+            }
+            
+
+            .projectScreenshots{
+                
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                text-align: center;
+                margin-top: 20px;
+                
+            }
+            .projectScreenshots h4{
+                background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
+                padding-bottom: 5px;
+            }
+
+        
+            .projectPicsImg{
+                width: 700px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 2px 0px #888888; 
+                margin-bottom: 10px;
+            }
+            .projectPicsImg1{
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 2px 0px #888888; 
+                margin-bottom: 10px;
+            }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width : 800px) and (max-device-width : 1223px) {
+
+
+    .navbar{
+        height: 35px; 
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .nav-item{
+        color:#CFCFCF;
+        margin-left: 5px;
+    }
+    .nav-link:hover{
+        color:#7CABC7;
+    }
+
+    .bg{
+        background-image: url("images/homebg.png");
+    }
+
+    .homeBg{
+        width: 100%;
+        margin-top: -50px;
+    }
+    .nav-link{
+        color: #ffffff;
+    }
+
+    .active{
+        color: #C8A487;
+    }
+
+
+    .slides-hidden { display : none; }
+
+
+
+
+
+
+
+
+
+    /**HOME**/
+    .homeCont{
+        width: 100%;
+        height: 550px;
+        background-color: #323B4C;
+        margin-top: -40px;
+        padding-top: 20px;   
+    }
+
+        .homePic{
+            width:200px;
+        }
+        .homePicCont{
+        margin-left: auto;
+        margin-right: auto;
+        width: min-content;
+            
+        }
+        .homeMainCont{
+            align-items: center;
+            text-align: center;
+            padding:10px;
+            margin-top: 70px;
+        }
+
+        .homeText{
+            color: #CFCFCF;
+            max-width: 60%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:20px;
+            display: inline-block;
+        }
+        .clsuLink{
+            color: #CFCFCF; 
+        }
+        .clsuLink:hover{
+            color: #C8A487;
+            text-decoration: none;
+        }
+
+        .socMed{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            color: #CABAAD;
+        }
+        .icons{
+            font-size: 30px;
+            margin: 0px 5px 0px 5px;
+        }
+        .icon1{
+            color: #4267B2;
+        }
+        .icon2{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon3{
+            color: #0077b5;
+        }
+        .icon4{
+            color: #229ED9;
+        }
+
+    
+
+        .textBox{
+            width: 50%; 
+        }
+
+        .aboutMeHeader{
+            font-size: 28px;
+            color: #BA7041;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .aboutMeText{
+            font-size: 20px;
+            color: #cfcfcf;
+            width:90%;
+            padding: 0px 10px 10px 10px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+       
+    
+        .aboutMePic{
+            width: 200px;
+            margin-top: 5px;
+          
+        }
+        .cont{
+            align-items: center;
+            
+            text-align: center;
+            margin-top: 70px;
+        }
+        .aboutMeCont{
+            width: 100%;
+            height: 800px;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;   
+        }
+        .aboutMeSocMed{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            color: #CABAAD;
+        
+        }
+    
+        .email{
+            text-decoration: none;
+            color: #cfcfcf;
+        }
+
+        .column {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0px 1px 2px 0px #888888; 
+            padding-bottom: 10px;
+            background-color: #CFCFCF;
+        }
+        .column:hover {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 2px 3px 2px 0px #888888; 
+        }
+        .column h5{
+            background: #CFCFCF;
+            padding:5px 0px;
+        }
+        
+        
+        .row{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: center;
+            height: fit-content;
+            
+        }
+
+        .myProjectsCont{
+            width: 100%;
+            height: 720px;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;
+        }
+        .header{
+            text-align: center;
+            color: #CFCFCF;
+            margin-top: 70px;
+        }
+
+        .projectsThumbNails{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .logocontainer{
+            width: 100%;
+           
+            margin-top: 70px;
+            
+        }
+        
+        .containerimg{
             width: 300px;
             border-radius: 10px;
-            box-shadow: 0px 1px 2px 0px #888888; 
-            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+         
         }
+        .containerimg img{
+            width: 300px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+
+
+
+            .logocontainer1{
+                width: 80%;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .logocontainer1 img{
+                width: 350px;
+                border-radius: 10px;
+                margin-top: 0px
+            }
+        
+            .containerimg1{
+                display: inline-block;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+
+
+
+            .projecttext{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                width: 90%;
+                text-align: left;
+                padding: 20px;
+                background-color: #323B4C;
+                color: #cfcfcf;
+            }
+            .projecttext h5{
+                color: #C8A487;
+            }
+            
+
+            .projectScreenshots{
+                
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                text-align: center;
+                margin-top: 20px;
+                
+            }
+            .projectScreenshots h4{
+                background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
+                padding-bottom: 5px;
+            }
+
+        
+            .projectPicsImg{
+                width: 700px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 2px 0px #888888; 
+                margin-bottom: 10px;
+            }
+            .projectPicsImg1{
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 2px 0px #888888; 
+                margin-bottom: 10px;
+            }
+
+}
+
+
+
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 799px) {
+
+
+    .navbar{
+        height: 35px; 
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .nav-item{
+        color:#CFCFCF;
+        margin-left: 5px;
+    }
+    .nav-link:hover{
+        color:#7CABC7;
+    }
+
+    .bg{
+        background-image: url("images/homebg.png");
+    }
+
+    .homeBg{
+        width: 100%;
+        margin-top: -50px;
+    }
+    .nav-link{
+        color: #ffffff;
+    }
+
+    .active{
+        color: #C8A487;
+    }
+
+
+    .slides-hidden { display : none; }
+
+
+
+
+
+
+
+
+
+    /**HOME**/
+    .homeCont{
+        width: 100%;
+        height: 550px;
+        background-color: #323B4C;
+        margin-top: -40px;
+        padding-top: 20px;   
+    }
+
+        .homePic{
+            width:200px;
+        }
+        .homePicCont{
+        margin-left: auto;
+        margin-right: auto;
+        width: min-content;
+            
+        }
+        .homeMainCont{
+            align-items: center;
+            text-align: center;
+            padding:10px;
+            margin-top: 70px;
+        }
+
+        .homeText{
+            color: #CFCFCF;
+            max-width: 90%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:30px;
+            display: inline-block;
+        }
+        .clsuLink{
+            color: #CFCFCF; 
+        }
+        .clsuLink:hover{
+            color: #C8A487;
+            text-decoration: none;
+        }
+
+        .socMed{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            color: #CABAAD;
+        }
+        .icons{
+            font-size: 30px;
+            margin: 0px 5px 0px 5px;
+        }
+        .icon1{
+            color: #4267B2;
+        }
+        .icon2{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon3{
+            color: #0077b5;
+        }
+        .icon4{
+            color: #229ED9;
+        }
+
+    
+
+        .textBox{
+            width: 50%; 
+        }
+
+        .aboutMeHeader{
+            font-size: 28px;
+            color: #BA7041;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .aboutMeText{
+            font-size: 20px;
+            color: #cfcfcf;
+            width:90%;
+            padding: 0px 10px 10px 10px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+       
+    
+        .aboutMePic{
+            width: 200px;
+            margin-top: 5px;
+          
+        }
+        .cont{
+            align-items: center;
+            
+            text-align: center;
+            margin-top: 70px;
+        }
+        .aboutMeCont{
+            width: 100%;
+            height: 800px;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;   
+        }
+        .aboutMeSocMed{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            color: #CABAAD;
+        
+        }
+    
+        .email{
+            text-decoration: none;
+            color: #cfcfcf;
+        }
+
+        .column {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0px 1px 2px 0px #888888; 
+            padding-bottom: 10px;
+            background-color: #CFCFCF;
+            margin-top: 10px;
+        }
+      
+        .column h5{
+            background: #CFCFCF;
+            padding:5px 0px;
+        }
+        
+        
+        .row{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: center;
+            height: fit-content;
+            
+        }
+
+        .myProjectsCont{
+            width: 100%;
+            height: 100%;
+            background-color: #323B4C;
+            margin-top: -40px;
+            padding-top: 20px;
+        }
+        .header{
+            text-align: center;
+            color: #CFCFCF;
+            margin-top: 70px;
+        }
+
+        .projectsThumbNails{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .logocontainer{
+            width: 100%;
+           
+            margin-top: 70px;
+            
+        }
+        
+        .containerimg{
+            width: 300px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+         
+        }
+        .containerimg img{
+            width: 300px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+
+
+
+            .logocontainer1{
+                width: 80%;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .logocontainer1 img{
+                width: 350px;
+                border-radius: 10px;
+                margin-top: 0px
+            }
+        
+            .containerimg1{
+                display: inline-block;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+
+
+
+            .projecttext{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                width: 90%;
+                text-align: left;
+                padding: 20px;
+                background-color: #323B4C;
+                color: #cfcfcf;
+            }
+            .projecttext h5{
+                color: #C8A487;
+            }
+            
+
+            .projectScreenshots{
+                
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                text-align: center;
+                margin-top: 20px;
+                
+            }
+            .projectScreenshots h4{
+                background-image: linear-gradient(to right, #B6FBFF , #83A4D4);
+                padding-bottom: 5px;
+            }
+
+        
+            .projectPicsImg{
+                width: 700px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 2px 0px #888888; 
+                margin-bottom: 10px;
+            }
+            .projectPicsImg1{
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 2px 0px #888888; 
+                margin-bottom: 10px;
+            }
+
 }
