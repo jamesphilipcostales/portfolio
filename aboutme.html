@@ -19,51 +19,84 @@
 <body>
 
     <!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-lg navbarprojects" >
-		<div class="collapse navbar-collapse justify-content-center">
+	<nav class="navbar navbarprojects" >
+		<div class=" navbar-collapse justify-content-center">
 			<ul class="nav justify-content-center">
 				<li class="nav-item navHover">
-					<a class="nav-link" href="index.html" >Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="index.html" ><i class="fas fa-home"></i>&nbspHome <span class="sr-only">(current)</span></a>
 				</li>
 
 				<li class="nav-item navHover">
-					<a class="nav-link" href="myprojects.html">My Projects</a>
+					<a class="nav-link" href="myprojects.html"><i class="fas fa-folder-open"></i>&nbspMy Projects</a>
 				</li>
 
-				<li class="nav-item active navHover">
-					<a class="nav-link" href="#"><b>About Me</b></a>
+				<li class="nav-item navHover">
+					<a class="nav-link active" href="#"><i class="fas fa-user-tie"></i>&nbsp<b>About Me</b></a>
 				</li>
                 
 			</ul>
 		</div>
+		
 	</nav>
 
 
 
-    <div class="containerHome">
-        <img src="images/aboutmepic.png" class="homeBg">
-    </div>
-
-	<div class="aboutMe2">
-		<div class="aboutMeHeader"><br><b>About Me</b></div><br>
-		<div class="aboutMeText">Hi! My whole name is James Philip B. Costales. I'm 21 years old. I'm an undergraduate of Information Technology in CLSU.
-			Since I learned about programming, I started to dream of becoming a software developer, software engineer, or web developer someday. With my studies and trainings, 
-			I am confident that I am on the right track in achieving my dreams. 
-			<br><br>
-			The languages I know are C++, Java, PHP, HTML, and Javascript. 
-
+   
+	<div class="aboutMeCont">
+		<div class="aboutMe2">
+			
+			
+			<div class="cont"> 
+				<div class="aboutMeHeader"><b>About Me</b></div><br>
+				<div class="aboutMePicCont">
+					<img src="images/pic.png" class="aboutMePic slides slides-hidden">
+					<img src="images/pic1.png" class="aboutMePic slides slides-hidden ">
+					<img src="images/pic2.png" class="aboutMePic slides slides-hidden ">
+					<img src="images/pic3.png" class="aboutMePic slides slides-hidden ">
+				</div>
+				<div class="aboutMeText">Hi! My whole name is James Philip B. Costales. I'm 21 years old. I'm an undergraduate of Information Technology in CLSU.
+					Since I learned about programming, I started to dream of becoming a software developer, software engineer, or web developer someday. With my studies and trainings, 
+					I am confident that I am on the right track in achieving my dreams. 
+					<br><br>
+					The languages I know are C++, Java, PHP, HTML, and Javascript. 
+				</div>
+				
+			</div>	
 		</div>
 	</div>
 
-    <div class="aboutMeContact"><br>
-				<a href="https://www.facebook.com/philipjamescostales/"><i class="fab fa-facebook"></i></a>&nbsp
-				<a href="https://www.instagram.com/jamessphilipp/"><i class="fab fa-instagram"></i></a>&nbsp
-				<a href="https://www.linkedin.com/in/james-philip-costales-1a66ba20b/"><i class="fab fa-linkedin"></i></a>&nbsp
-				<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Ft.me%2Fjamessphilipp%3Ffbclid%3DIwAR2Db27ZrjTnHEK0bKZqNDC-zhFjlKYjZgIRHQlrO2yiJ3P6CLc0WpN2bos&h=AT3cnHUoLPcyr9Jh7yq7Wu8R8vDgT2YQpkhphnVyFI753irC6pSyRMVatzlm6l3RirlB3Jy7TOBFe15PnvxL-HhRDK7dnWAVNeFZFJeGZT7cHs4Xoxjp-w3R6WvL9hv6r2IMRQ"><i class="fab fa-telegram"></i></a>&nbsp
+    <div class="aboutMeSocMed">
+		
+			You can check my social media accounts:<br>
+			<a class="icons icon1" href="https://www.facebook.com/philipjamescostales/"><i class="fab fa-facebook"></i></a>&nbsp
+			<a class="icons icon2" href="https://www.instagram.com/jamessphilipp/"><i class="fab fa-instagram"></i></a>&nbsp
+			<a class="icons icon3" href="https://www.linkedin.com/in/james-philip-costales-1a66ba20b/"><i class="fab fa-linkedin"></i></a>&nbsp
+			<a class="icons icon4" href="https://l.facebook.com/l.php?u=https%3A%2F%2Ft.me%2Fjamessphilipp%3Ffbclid%3DIwAR2Db27ZrjTnHEK0bKZqNDC-zhFjlKYjZgIRHQlrO2yiJ3P6CLc0WpN2bos&h=AT3cnHUoLPcyr9Jh7yq7Wu8R8vDgT2YQpkhphnVyFI753irC6pSyRMVatzlm6l3RirlB3Jy7TOBFe15PnvxL-HhRDK7dnWAVNeFZFJeGZT7cHs4Xoxjp-w3R6WvL9hv6r2IMRQ"><i class="fab fa-telegram"></i></a>&nbsp
+		
+			<br><br>
+			<a href="mailto:philipjamescostales@gmail.com,costales.james@clsu2.edu.ph?" class="email">Click here to send me an email!</a>
+		
+		
+		<div><br><br>
+			<p>©2021 COSTALES, J.P. Portfolio</p>
+		</div>
 	</div>
 
 
-
+<!-- Script for Slide Show: Change picture every three seconds -->
+<script>
+    addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+        var index = 0;
+        const slides = document.querySelectorAll(".slides");
+        const classHide = "slides-hidden", count = slides.length;
+        nextSlide();
+        function nextSlide() {
+            slides[(index ++) % count].classList.add(classHide);
+            slides[index % count].classList.remove(classHide);
+            setTimeout(nextSlide, 5000);
+        }
+    });
+</script>
 
 
 
