@@ -160,7 +160,7 @@
         }
 
         .aboutMeText{
-            font-size: 20px;
+            font-size: 16px;
             color: #cfcfcf;
             
             width: 700px;
@@ -174,7 +174,7 @@
         }
         .aboutMePic{
             width: 300px;
-            margin-top: -200px;
+            margin-top: -450px;
             margin-left: 50px;
         }
         .cont{
@@ -203,7 +203,7 @@
             color: #cfcfcf;
         }
 
-        .column {
+        .column, .column1, .column2 {
             width: 25%;
             margin-left: auto;
             margin-right: auto;
@@ -212,13 +212,14 @@
             padding-bottom: 10px;
             background-color: #CFCFCF;
         }
-        .column:hover {
+        .column :hover {
             width: 25%;
             margin-left: auto;
             margin-right: auto;
             border-radius: 10px;
             box-shadow: 2px 3px 2px 0px #292929; 
         }
+       
         .column h5{
             background: #CFCFCF;
             padding:5px 0px;
@@ -232,15 +233,16 @@
             margin-top: 20px;
             text-align: center;
             height: fit-content;
-            
         }
+        
 
         .myProjectsCont{
             width: 100%;
-            height: 750px;
+            height: fit-content;
             background-color: #323B4C;
             margin-top: -40px;
             padding-top: 20px;
+            padding-bottom: 40px;
         }
         .header{
             text-align: center;
@@ -310,20 +312,6 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Desktops and laptops ----------- */
 @media only screen and (min-device-width : 1224px) and (max-device-width : 1823px) {
 
@@ -363,7 +351,9 @@
     .slides-hidden { display : none; }
 
 
-
+    .carousel-cont{
+        width: 500px;
+    }
 
 
 
@@ -373,7 +363,7 @@
     /**HOME**/
     .homeCont{
         width: 100%;
-        height: 450px;
+        height: 500px;
         background-color: #323B4C;
         margin-top: -40px;
         padding-top: 20px;   
@@ -451,7 +441,7 @@
         }
 
         .aboutMeText{
-            font-size: 20px;
+            font-size: 16px;
             color: #cfcfcf;
             display: inline-block;
             width: 700px;
@@ -460,13 +450,11 @@
             
         }
         .aboutMePicCont{
-            display: inline;
-        
-            
+            display: inline;            
         }
         .aboutMePic{
-            width: 300px;
-            margin-top: -200px;
+            width: 250px;
+            margin-top: -150px;
             margin-left: 50px;
         }
         .cont{
@@ -485,7 +473,7 @@
         .aboutMeSocMed{
             width: 100%;
             text-align: center;
-            padding: 10px;
+            padding-top: 10px;
             color: #CABAAD;
         
         }
@@ -500,39 +488,76 @@
             margin-left: auto;
             margin-right: auto;
             border-radius: 10px;
-            box-shadow: 0px 1px 2px 0px #888888; 
+            box-shadow: 0px 1px 2px 0px #1d1d1d; 
             padding-bottom: 10px;
             background-color: #CFCFCF;
+            margin-top:10px;
+           
         }
         .column:hover {
             width: 30%;
             margin-left: auto;
             margin-right: auto;
             border-radius: 10px;
-            box-shadow: 2px 3px 2px 0px #888888; 
+            box-shadow: 2px 3px 2px 0px #1d1d1d; 
         }
+        
         .column h5{
             background: #CFCFCF;
             padding:5px 0px;
         }
+        .column1 {
+            width: 30%;
+            margin-left: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 2px 0px #000000; 
+            padding-bottom: 10px;
+            background-color: #CFCFCF;
+        }
+        .column2 {
+            width: 30%;
+            margin-left: 28px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 2px 0px #202020; 
+            padding-bottom: 10px;
+            background-color: #CFCFCF;
+        }
+        .column3 {
+            width: fit-content;
+            margin-left: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 2px 0px #0c0c0c; 
+            padding: 10px;
+            background-color: #cfcfcfcb;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: fit-content;
+            text-decoration: none;
+        }
+        .column2, .column1:hover {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 2px 3px 2px 0px #292929; 
+        }
         
         
         .row{
-            width: 80%;
+            width: 65%;
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
             text-align: center;
             height: fit-content;
-            
         }
 
         .myProjectsCont{
             width: 100%;
-            height: 625px;
+            height: fit-content;
             background-color: #323B4C;
             margin-top: -40px;
             padding-top: 20px;
+            padding-bottom: 40px;
+          
         }
         .header{
             text-align: center;
@@ -556,7 +581,7 @@
         .logocontainer img{
             width: 350px;
             border-radius: 10px;
-            margin-top: -200px
+            margin-top: -200px;
             }
 
             .containerimg{
@@ -632,14 +657,51 @@
             }
 
 }
+@media only screen and (min-device-width : 1824px) {
+    .aboutMeHeader{
+        font-size: 28px;
+        color: #BA7041;
+        text-align: center;
+    }
 
-
-
-
-
-
-
-
+    .aboutMeText{
+        font-size: 20px;
+        color: #cfcfcf;
+        display: inline-block;
+        width: 700px;
+        padding: 0px 20px 20px 20px;
+        text-align: left;
+        
+    }
+    .aboutMePicCont{
+        display: inline;            
+    }
+    .aboutMePic{
+        width: 300px;
+        margin-top: -200px;
+        margin-left: 50px;
+    }
+    .cont{
+        align-items: center;
+        
+        text-align: center;
+        margin-top: 70px;
+    }
+    .aboutMeCont{
+        width: 100%;
+        height: 500px;
+        background-color: #323B4C;
+        margin-top: -40px;
+        padding-top: 20px;   
+    }
+    .aboutMeSocMed{
+        width: 100%;
+        text-align: center;
+        padding-top: 150px;
+        color: #CABAAD;
+    
+    }
+}
 @media only screen and (min-device-width : 800px) and (max-device-width : 1223px) {
 
 
@@ -810,7 +872,7 @@
             color: #cfcfcf;
         }
 
-        .column {
+        .column, .column1, .column2  {
             width: 30%;
             margin-left: auto;
             margin-right: auto;
@@ -819,7 +881,7 @@
             padding-bottom: 10px;
             background-color: #CFCFCF;
         }
-        .column:hover {
+        .column, .column1, .column2 :hover {
             width: 30%;
             margin-left: auto;
             margin-right: auto;
@@ -844,7 +906,7 @@
 
         .myProjectsCont{
             width: 100%;
-            height: 720px;
+            height: fit-content;
             background-color: #323B4C;
             margin-top: -40px;
             padding-top: 20px;
@@ -953,10 +1015,6 @@
             }
 
 }
-
-
-
-
 @media only screen and (min-device-width : 300px) and (max-device-width : 799px) {
 
 
@@ -1148,7 +1206,7 @@
             padding: 2px 15px 2px 15px;
         }
 
-        .column {
+        .column, .column1, .column2  {
             width: 90%;
             margin-left: auto;
             margin-right: auto;
@@ -1186,6 +1244,7 @@
             border-top-left-radius: 20px;   
             border-top-right-radius: 20px;
             box-shadow: 2px -5px 9px -4px #0b0e14c2;
+            padding-bottom: 40px;
         }
         .header{
             text-align: center;
